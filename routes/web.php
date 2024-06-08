@@ -12,4 +12,5 @@ Route::get('/', [TopController::class,'index'])->name('index');
 
 Route::get('/recipes', [RecipeController::class, 'index']);
 
-// Route::get('/recipes', [RecipeController::class, 'search']);
+Route::post('/recipes', [RecipeController::class, 'add'])->name('add');
+
